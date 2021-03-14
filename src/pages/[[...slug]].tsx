@@ -1,3 +1,4 @@
+import Catalogue from '@/components/Catalogue';
 import { GetServerSideProps } from 'next';
 
 interface IHomeProps {
@@ -6,13 +7,7 @@ interface IHomeProps {
 }
 
 const Home: React.FC<IHomeProps> = (props) => {
-  return (
-    <div>
-      <h1>catch-all-slug</h1>
-      <h1>text --- {props.text}</h1>
-      <h1>server side locale --- {props.locale}</h1>
-    </div>
-  );
+  return <Catalogue />;
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
