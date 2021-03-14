@@ -1,4 +1,4 @@
-import Catalogue from '@/components/Catalogue';
+import Catalogue from '@/components/catalogue';
 import { GetServerSideProps } from 'next';
 
 interface IHomeProps {

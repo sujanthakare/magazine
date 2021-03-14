@@ -1,3 +1,4 @@
+import { CSSObject } from '@emotion/serialize';
 import React, { Fragment } from 'react';
 
 const productList = [
@@ -24,6 +25,15 @@ const productList = [
 ];
 
 const Catalogue = () => {
+  const CARD: CSSObject = {
+    backgroundColor: 'grey',
+    height: 500,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    border: '1px black solid',
+  };
+
   return (
     <div
       css={{
@@ -33,17 +43,7 @@ const Catalogue = () => {
     >
       {productList.map((item, index) => {
         return (
-          <div
-            key={index}
-            css={{
-              backgroundColor: 'grey',
-              height: 500,
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              border: '1px black solid',
-            }}
-          >
+          <div key={index} css={CARD}>
             <img
               src={item.image}
               alt={item.image}
