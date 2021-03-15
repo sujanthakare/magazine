@@ -24,14 +24,12 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
           },
         }}
       />
-      <NavBar />
+      {/* <NavBar /> */}
       <Component {...pageProps} />
 
       <div>
-        <h2>
-          LOCALE: {locale}
-          DEFAULT_LOCALE: {defaultLocale}
-        </h2>
+        <h2>LOCALE: {locale}</h2>
+        <h2>DEFAULT_LOCALE: {defaultLocale}</h2>
       </div>
     </Fragment>
   );

@@ -7,7 +7,8 @@ interface IHomeProps {
 }
 
 const Home: React.FC<IHomeProps> = (props) => {
-  return <Catalogue />;
+  return <h1>HOME</h1>;
+  // return <Catalogue />;
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
