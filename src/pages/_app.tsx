@@ -26,6 +26,13 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
       />
       <NavBar />
       <Component {...pageProps} />
+
+      <div>
+        <h2>
+          LOCALE: {locale}
+          DEFAULT_LOCALE: {defaultLocale}
+        </h2>
+      </div>
     </Fragment>
   );
 };
